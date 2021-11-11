@@ -1,13 +1,20 @@
 import SearchPage from "../pageobjects/search.page";
 import {
+  getGlobalConfigFromJson,
+  getGlobalConfigFromTextFile,
+} from "../resource/global.config";
+import {
   getConfigFromJson,
   getConfigFromTextFile,
 } from "../resource/search/search.config";
 
 describe("Ebay Product Search", async () => {
   let searchConfig;
+  let globalConfig;
   before(async () => {
-    searchConfig = getConfigFromTextFile();
+    globalConfig = getGlobalConfigFromJson(); // getting global config
+    searchConfig = getConfigFromTextFile(); //// getting search config
+    console.log(globalConfig); // Printing global config obj
     await SearchPage.open();
   });
 

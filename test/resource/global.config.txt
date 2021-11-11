@@ -1,0 +1,7 @@
+{
+  "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+  "input": "laptop",
+  "inputResult": "laptop",
+  "redirectTitle": "laptop | eBay",
+  "category": "PC Laptops & Netbooks"
+}
